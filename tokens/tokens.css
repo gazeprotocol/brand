@@ -1,0 +1,319 @@
+/* GENERATED from tokens/tokens.json by _build/build_tokens.py — GAZE tokens v0.6.0. Do not edit by hand. */
+
+/* Fonts: Geist + Geist Mono, SIL OFL 1.1 (typography/fonts). Adjust the url() paths to where you host them. */
+@font-face { font-family: "Geist"; src: url("../fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("../fonts/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+
+:root {
+  color-scheme: dark;
+  /* ---- core palette ---- */
+  --gz-obsidian: #080604;  /* site */
+  --gz-blaze: #ff6b2c;  /* site */
+  --gz-molten: #ffb800;  /* site */
+  --gz-pulse: #ff3366;  /* site */
+  --gz-ember-dim: #cc5522;  /* site */
+  --gz-ember-glow: rgba(255, 107, 44, 0.15);  /* site */
+  --gz-warm-white: #f3efe6;  /* site */
+  --gz-ink: #181410;  /* site */
+  --gz-ink-soft: #3a342c;  /* site */
+  --gz-surface: #111113;  /* site */
+  --gz-elevated: #18181c;  /* site */
+  --gz-overlay: #1e1e24;  /* site */
+  --gz-bone: #f5f4f0;  /* site */
+  --gz-ash: #c8c5bc;  /* site */
+  --gz-smoke: #8a8680;  /* site */
+  --gz-soot: #4a4845;  /* site */
+  --gz-verdant: #4ac28f;  /* derived */
+  --gz-verdant-ink: #146b48;  /* derived */
+  --gz-blaze-ink: #a83c0e;  /* derived */
+  --gz-molten-ink: #7a5200;  /* derived */
+  --gz-pulse-ink: #b0144a;  /* derived */
+  --gz-blaze-hover: #ff8247;  /* derived */
+  --gz-ink-muted: #625d56;  /* derived */
+  --gz-ink-subtle: #9a958c;  /* derived */
+  --gz-paper: #fbf9f4;  /* derived */
+  --gz-parchment: #ebe5d8;  /* derived */
+  --gz-afterimage: #0c84ba;  /* site */
+  --gz-afterimage-bright: #2b9bd0;  /* derived */
+  --gz-afterimage-ink: #096896;  /* derived */
+  --gz-blaze-pressed-light: #e6602a;  /* derived */
+  --gz-cinder: #76726b;  /* derived */
+  --gz-flint: #857f74;  /* derived */
+  --gz-white: #ffffff;  /* site */
+  /* ---- gradients ---- */
+  --gz-gradient-seam: linear-gradient(90deg, transparent 0%, rgba(255,107,44,0) 6%, #ff6b2c 20%, #ffb800 36%, rgba(255,184,0,0.12) 49%, rgba(12,132,186,0.12) 51%, #0c84ba 64%, #0c84ba 80%, rgba(12,132,186,0) 94%, transparent 100%);
+  --gz-gradient-cooling: linear-gradient(90deg, #ff6b2c 0%, #0c84ba 100%);
+  --gz-gradient-afterimage-line: linear-gradient(90deg, transparent 0%, rgba(12,132,186,0) 6%, #0c84ba 24%, #0c84ba 76%, rgba(12,132,186,0) 94%, transparent 100%);
+  --gz-gradient-crossing: linear-gradient(90deg, #ff6b2c 0%, #0c84ba 100%);
+  --gz-gradient-heat: linear-gradient(90deg, #ff6b2c 0%, #ffb800 50%, #ff3366 100%);
+  --gz-gradient-heat-line: linear-gradient(90deg, transparent 0%, rgba(255,107,44,0) 8%, #ff6b2c 22%, #ffb800 50%, #ff3366 78%, rgba(255,51,102,0) 92%, transparent 100%);
+  --gz-gradient-iris-glow: radial-gradient(circle, rgba(255,184,0,0.5) 0%, rgba(255,107,44,0.2) 50%, rgba(255,107,44,0) 100%);
+  --gz-gradient-ambient: radial-gradient(circle, rgba(255,107,44,0.22), transparent 65%);
+  --gz-gradient-warm-wash: radial-gradient(ellipse 100% 60% at 80% 0%, rgba(255,107,44,0.06), transparent 60%), radial-gradient(ellipse 80% 60% at 90% 100%, rgba(255,184,0,0.05), transparent 60%);
+  /* ---- semantic roles: dark (default — the site is dark-first) ---- */
+  --gz-bg: #080604;
+  --gz-bg-surface: #111113;
+  --gz-bg-elevated: #18181c;
+  --gz-bg-overlay: #1e1e24;
+  --gz-fg: #f5f4f0;
+  --gz-fg-secondary: #c8c5bc;
+  --gz-fg-muted: #8a8680;
+  --gz-fg-subtle: #4a4845;
+  --gz-border: rgba(255, 255, 255, 0.08);
+  --gz-border-subtle: rgba(255, 255, 255, 0.04);
+  --gz-border-chip: rgba(255, 255, 255, 0.12);
+  --gz-border-strong: #76726b;
+  --gz-accent: #ff6b2c;
+  --gz-accent-hover: #ff8247;
+  --gz-accent-pressed: #cc5522;
+  --gz-accent-fg: #080604;
+  --gz-accent-text: #ff6b2c;
+  --gz-highlight: #ffb800;
+  --gz-success: #4ac28f;
+  --gz-success-text: #4ac28f;
+  --gz-warning: #ffb800;
+  --gz-warning-text: #ffb800;
+  --gz-critical: #ff3366;
+  --gz-critical-text: #ff3366;
+  --gz-info: #2b9bd0;
+  --gz-afterimage: #0c84ba;
+  --gz-afterimage-text: #2b9bd0;
+  --gz-settled: #2b9bd0;
+  --gz-focus: #ff6b2c;
+  --gz-selection: rgba(255, 107, 44, 0.15);
+  --gz-scrim: rgba(8, 6, 4, 0.72);
+  /* ---- type ---- */
+  --gz-font-sans: "Geist", system-ui, -apple-system, sans-serif;
+  --gz-font-mono: "Geist Mono", "Fira Code", monospace;
+  --gz-font-email: "Geist", -apple-system, "Segoe UI", "Helvetica", "Arial", sans-serif;
+  --gz-weight-thin: 100;
+  --gz-weight-light: 300;
+  --gz-weight-regular: 400;
+  --gz-weight-medium: 500;
+  --gz-text-display-size: clamp(2.4rem, 6vw, 5rem); --gz-text-display-leading: 0.95; --gz-text-display-tracking: -0.035em; --gz-text-display-weight: 100;
+  --gz-text-wordmark-size: clamp(28vh, 38vw, 100vh); --gz-text-wordmark-leading: 0.82; --gz-text-wordmark-tracking: -0.02em; --gz-text-wordmark-weight: 100;
+  --gz-text-h1-size: clamp(2.25rem, 4vw, 3rem); --gz-text-h1-leading: 1.1; --gz-text-h1-tracking: -0.02em; --gz-text-h1-weight: 500;
+  --gz-text-h2-size: clamp(1.75rem, 3vw, 2.25rem); --gz-text-h2-leading: 1.15; --gz-text-h2-tracking: -0.02em; --gz-text-h2-weight: 500;
+  --gz-text-h3-size: 1.5rem; --gz-text-h3-leading: 1.25; --gz-text-h3-tracking: -0.02em; --gz-text-h3-weight: 500;
+  --gz-text-h4-size: 1.25rem; --gz-text-h4-leading: 1.3; --gz-text-h4-tracking: -0.02em; --gz-text-h4-weight: 500;
+  --gz-text-h5-size: 1rem; --gz-text-h5-leading: 1.4; --gz-text-h5-tracking: -0.01em; --gz-text-h5-weight: 500;
+  --gz-text-body-lg-size: 1.125rem; --gz-text-body-lg-leading: 1.7; --gz-text-body-lg-tracking: 0; --gz-text-body-lg-weight: 400;
+  --gz-text-body-md-size: 1rem; --gz-text-body-md-leading: 1.7; --gz-text-body-md-tracking: 0; --gz-text-body-md-weight: 400;
+  --gz-text-body-sm-size: 0.875rem; --gz-text-body-sm-leading: 1.6; --gz-text-body-sm-tracking: 0; --gz-text-body-sm-weight: 400;
+  --gz-text-label-md-size: 0.75rem; --gz-text-label-md-leading: 1; --gz-text-label-md-tracking: 0.1em; --gz-text-label-md-weight: 500;
+  --gz-text-label-sm-size: 0.6875rem; --gz-text-label-sm-leading: 1; --gz-text-label-sm-tracking: 0.12em; --gz-text-label-sm-weight: 500;
+  --gz-text-eyebrow-size: 11px; --gz-text-eyebrow-leading: 1.5; --gz-text-eyebrow-tracking: 0.42em; --gz-text-eyebrow-weight: 400;
+  --gz-text-corner-size: 10px; --gz-text-corner-leading: 1.5; --gz-text-corner-tracking: 0.24em; --gz-text-corner-weight: 400;
+  --gz-text-chip-size: 11px; --gz-text-chip-leading: 1.5; --gz-text-chip-tracking: 0.24em; --gz-text-chip-weight: 500;
+  --gz-text-data-size: 0.875rem; --gz-text-data-leading: 1.4; --gz-text-data-tracking: 0; --gz-text-data-weight: 400;
+  --gz-text-data-lg-size: 2rem; --gz-text-data-lg-leading: 1.1; --gz-text-data-lg-tracking: -0.02em; --gz-text-data-lg-weight: 300;
+  /* ---- space / layout / radius / border / shadow ---- */
+  --gz-chart-series-1: #ff6b2c;
+  --gz-chart-series-2: #0c84ba;
+  --gz-chart-series-3: #ffb800;
+  --gz-chart-series-4: #ff3366;
+  --gz-chart-series-5: #c8c5bc;
+  --gz-space-0: 0px;
+  --gz-space-1: 4px;
+  --gz-space-2: 8px;
+  --gz-space-3: 12px;
+  --gz-space-4: 16px;
+  --gz-space-5: 20px;
+  --gz-space-6: 24px;
+  --gz-space-8: 32px;
+  --gz-space-10: 40px;
+  --gz-space-12: 48px;
+  --gz-space-16: 64px;
+  --gz-space-20: 80px;
+  --gz-space-24: 96px;
+  --gz-section-sm: clamp(3rem, 6vw, 5rem);
+  --gz-section-md: clamp(5rem, 10vw, 8rem);
+  --gz-section-lg: clamp(7rem, 14vw, 12rem);
+  --gz-section-xl: clamp(10rem, 18vw, 16rem);
+  --gz-container-max: 1200px;
+  --gz-container-pad: clamp(1.25rem, 5vw, 3rem);
+  --gz-prose-max: 68ch;
+  --gz-corner-inset: 24px;
+  --gz-touch-min: 44px;
+  --gz-modal-width: 440px;
+  --gz-popup-width: 360px;
+  --gz-radius-xs: 3px;
+  --gz-radius-sm: 6px;
+  --gz-radius-md: 8px;
+  --gz-radius-card: 12px;
+  --gz-radius-lg: 16px;
+  --gz-radius-pill: 9999px;
+  --gz-border-width: 1px;
+  --gz-border-focus-width: 2px;
+  --gz-border-focus-offset: 3px;
+  --gz-shadow-ember: 0 0 40px rgba(255, 107, 44, 0.2), 0 0 80px rgba(255, 107, 44, 0.08);
+  --gz-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3);
+  --gz-shadow-card-hover: 0 2px 8px rgba(0, 0, 0, 0.5), 0 8px 32px rgba(0, 0, 0, 0.4);
+  --gz-shadow-pill-glow: 0 0 30px rgba(255, 107, 44, 0.35), inset 0 0 16px rgba(255, 107, 44, 0.05);
+  --gz-shadow-chip-hover: 0 0 24px rgba(255, 107, 44, 0.3), inset 0 0 0 1px rgba(255, 107, 44, 0.4);
+  --gz-shadow-modal: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --gz-shadow-light-card: 0 1px 2px rgba(24, 20, 16, 0.06), 0 4px 16px rgba(24, 20, 16, 0.06);
+  --gz-z-base: 0;
+  --gz-z-raised: 10;
+  --gz-z-overlay: 100;
+  --gz-z-modal: 200;
+  --gz-z-toast: 300;
+  --gz-bp-sm: 640px;
+  --gz-bp-md: 768px;
+  --gz-bp-teaser-mobile: 760px;
+  --gz-bp-lg: 1024px;
+  --gz-bp-xl: 1280px;
+  /* ---- motion ---- */
+  --gz-ease-gaze: cubic-bezier(0.16, 1, 0.3, 1);
+  --gz-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --gz-ease-breathe: cubic-bezier(0.42, 0, 0.58, 1);
+  --gz-duration-fast: 150ms;
+  --gz-duration-base: 250ms;
+  --gz-duration-hover: 320ms;
+  --gz-duration-slow: 400ms;
+  --gz-duration-slower: 600ms;
+  --gz-duration-drift: 1200ms;
+  --gz-cycle-dot: 2400ms;
+  --gz-cycle-ink: 5000ms;
+  --gz-cycle-breathe: 6000ms;
+  --gz-cycle-ambient: 9000ms;
+  --gz-cycle-ember: 18000ms;
+  --gz-reveal-distance: 24px;
+
+  /* ---- site-compatible aliases (same names as gazeprotocol.com, so ported site code keeps working) ---- */
+  --color-bg-base: var(--gz-bg); --color-bg-surface: var(--gz-bg-surface); --color-bg-elevated: var(--gz-bg-elevated); --color-bg-overlay: var(--gz-bg-overlay);
+  --color-fg-primary: var(--gz-fg); --color-fg-secondary: var(--gz-fg-secondary); --color-fg-muted: var(--gz-fg-muted); --color-fg-subtle: var(--gz-fg-subtle);
+  --color-blaze: var(--gz-blaze); --color-molten: var(--gz-molten); --color-pulse: var(--gz-pulse); --color-obsidian: var(--gz-obsidian);
+  --color-ember: var(--gz-blaze); --color-ember-dim: var(--gz-ember-dim); --color-ember-glow: var(--gz-ember-glow);
+  --color-border: var(--gz-border); --color-border-subtle: var(--gz-border-subtle);
+  --radius-card: var(--gz-radius-card); --radius-pill: var(--gz-radius-pill);
+  --shadow-ember: var(--gz-shadow-ember); --shadow-card: var(--gz-shadow-card); --shadow-card-hover: var(--gz-shadow-card-hover);
+  --font-sans: var(--gz-font-sans); --font-mono: var(--gz-font-mono);
+  --ease-gaze: var(--gz-ease-gaze); --duration-fast: var(--gz-duration-fast); --duration-base: var(--gz-duration-base); --duration-slow: var(--gz-duration-slow); --duration-slower: var(--gz-duration-slower);
+  --spacing-section-sm: var(--gz-section-sm); --spacing-section-md: var(--gz-section-md); --spacing-section-lg: var(--gz-section-lg); --spacing-section-xl: var(--gz-section-xl);
+  --z-base: 0; --z-raised: 10; --z-overlay: 100; --z-modal: 200; --z-toast: 300;
+}
+
+/* ---- LIGHT (derived from the site's warm-white half). Opt in: <html data-theme="light"> or class .gz-light on any subtree ---- */
+[data-theme="light"], .gz-light {
+  color-scheme: light;
+  --gz-bg: #f3efe6;
+  --gz-bg-surface: #ebe5d8;
+  --gz-bg-elevated: #fbf9f4;
+  --gz-bg-overlay: #fbf9f4;
+  --gz-fg: #181410;
+  --gz-fg-secondary: #3a342c;
+  --gz-fg-muted: #625d56;
+  --gz-fg-subtle: #9a958c;
+  --gz-border: rgba(8, 6, 4, 0.10);
+  --gz-border-subtle: rgba(8, 6, 4, 0.05);
+  --gz-border-strong: #857f74;
+  --gz-border-chip: rgba(8, 6, 4, 0.18);
+  --gz-accent: #ff6b2c;
+  --gz-accent-hover: #ff8247;
+  --gz-accent-pressed: #e6602a;
+  --gz-accent-fg: #181410;
+  --gz-accent-text: #096896;
+  --gz-highlight: #7a5200;
+  --gz-success: #4ac28f;
+  --gz-success-text: #146b48;
+  --gz-warning: #ffb800;
+  --gz-warning-text: #7a5200;
+  --gz-critical: #ff3366;
+  --gz-critical-text: #b0144a;
+  --gz-info: #096896;
+  --gz-afterimage: #0c84ba;
+  --gz-afterimage-text: #096896;
+  --gz-settled: #096896;
+  --gz-focus: #096896;
+  --gz-selection: rgba(12, 132, 186, 0.18);
+  --gz-scrim: rgba(24, 20, 16, 0.48);
+  --gz-shadow-modal: 0 24px 64px rgba(24,20,16,.16), 0 0 0 1px rgba(24,20,16,.06);
+  --gz-shadow-card: var(--gz-shadow-light-card); --gz-shadow-card-hover: 0 2px 6px rgba(24,20,16,.08), 0 10px 28px rgba(24,20,16,.10);
+}
+
+/* ---- AUTO: follow the OS only when the page opts in with data-theme="auto" ---- */
+@media (prefers-color-scheme: light) {
+  :root[data-theme="auto"] {
+    color-scheme: light;
+    --gz-bg: #f3efe6;
+    --gz-bg-surface: #ebe5d8;
+    --gz-bg-elevated: #fbf9f4;
+    --gz-bg-overlay: #fbf9f4;
+    --gz-fg: #181410;
+    --gz-fg-secondary: #3a342c;
+    --gz-fg-muted: #625d56;
+    --gz-fg-subtle: #9a958c;
+    --gz-border: rgba(8, 6, 4, 0.10);
+    --gz-border-subtle: rgba(8, 6, 4, 0.05);
+    --gz-border-strong: #857f74;
+    --gz-border-chip: rgba(8, 6, 4, 0.18);
+    --gz-accent: #ff6b2c;
+    --gz-accent-hover: #ff8247;
+    --gz-accent-pressed: #e6602a;
+    --gz-accent-fg: #181410;
+    --gz-accent-text: #096896;
+    --gz-highlight: #7a5200;
+    --gz-success: #4ac28f;
+    --gz-success-text: #146b48;
+    --gz-warning: #ffb800;
+    --gz-warning-text: #7a5200;
+    --gz-critical: #ff3366;
+    --gz-critical-text: #b0144a;
+    --gz-info: #096896;
+    --gz-afterimage: #0c84ba;
+    --gz-afterimage-text: #096896;
+    --gz-settled: #096896;
+    --gz-focus: #096896;
+    --gz-selection: rgba(12, 132, 186, 0.18);
+    --gz-scrim: rgba(24, 20, 16, 0.48);
+    --gz-shadow-modal: 0 24px 64px rgba(24,20,16,.16), 0 0 0 1px rgba(24,20,16,.06);
+    --gz-shadow-card: var(--gz-shadow-light-card); --gz-shadow-card-hover: 0 2px 6px rgba(24,20,16,.08), 0 10px 28px rgba(24,20,16,.10);
+  }
+}
+
+/* ---- PRINT: documents always print light ---- */
+@media print {
+  :root, [data-theme] {
+    color-scheme: light;
+    --gz-bg: #f3efe6;
+    --gz-bg-surface: #ebe5d8;
+    --gz-bg-elevated: #fbf9f4;
+    --gz-bg-overlay: #fbf9f4;
+    --gz-fg: #181410;
+    --gz-fg-secondary: #3a342c;
+    --gz-fg-muted: #625d56;
+    --gz-fg-subtle: #9a958c;
+    --gz-border: rgba(8, 6, 4, 0.10);
+    --gz-border-subtle: rgba(8, 6, 4, 0.05);
+    --gz-border-strong: #857f74;
+    --gz-border-chip: rgba(8, 6, 4, 0.18);
+    --gz-accent: #ff6b2c;
+    --gz-accent-hover: #ff8247;
+    --gz-accent-pressed: #e6602a;
+    --gz-accent-fg: #181410;
+    --gz-accent-text: #096896;
+    --gz-highlight: #7a5200;
+    --gz-success: #4ac28f;
+    --gz-success-text: #146b48;
+    --gz-warning: #ffb800;
+    --gz-warning-text: #7a5200;
+    --gz-critical: #ff3366;
+    --gz-critical-text: #b0144a;
+    --gz-info: #096896;
+    --gz-afterimage: #0c84ba;
+    --gz-afterimage-text: #096896;
+    --gz-settled: #096896;
+    --gz-focus: #096896;
+    --gz-selection: rgba(12, 132, 186, 0.18);
+    --gz-scrim: rgba(24, 20, 16, 0.48);
+    --gz-shadow-modal: 0 24px 64px rgba(24,20,16,.16), 0 0 0 1px rgba(24,20,16,.06);
+    --gz-shadow-card: var(--gz-shadow-light-card); --gz-shadow-card-hover: 0 2px 6px rgba(24,20,16,.08), 0 10px 28px rgba(24,20,16,.10);
+  }
+}
+
+/* ---- base ---- */
+html { font-family: var(--gz-font-sans); background: var(--gz-bg); color: var(--gz-fg); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+::selection { background: var(--gz-selection); color: var(--gz-fg); }
+:focus-visible { outline: var(--gz-border-focus-width) solid var(--gz-focus); outline-offset: var(--gz-border-focus-offset); border-radius: var(--gz-radius-xs); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; } }
